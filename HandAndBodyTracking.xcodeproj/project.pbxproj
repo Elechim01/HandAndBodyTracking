@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C468A4382AA24548009F4013 /* PreviewUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = C468A4372AA24548009F4013 /* PreviewUIKit */; };
+		C468A43C2AA289A1009F4013 /* HandTrackingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C468A43B2AA289A1009F4013 /* HandTrackingVC.swift */; };
+		C468A43E2AA28A1A009F4013 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C468A43D2AA28A1A009F4013 /* CameraView.swift */; };
+		C468A4402AA36CB8009F4013 /* ExtensionHandTrackingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C468A43F2AA36CB8009F4013 /* ExtensionHandTrackingVC.swift */; };
+		C468A4422AA38758009F4013 /* BodyTrackingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C468A4412AA38758009F4013 /* BodyTrackingVC.swift */; };
 		C4F42A712AA23D770089D99A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F42A702AA23D770089D99A /* AppDelegate.swift */; };
 		C4F42A732AA23D770089D99A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F42A722AA23D770089D99A /* SceneDelegate.swift */; };
 		C4F42A752AA23D770089D99A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F42A742AA23D770089D99A /* ViewController.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C468A4352AA24539009F4013 /* PreviewUIKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PreviewUIKit; path = ../../PreviewUIKit; sourceTree = "<group>"; };
+		C468A43B2AA289A1009F4013 /* HandTrackingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandTrackingVC.swift; sourceTree = "<group>"; };
+		C468A43D2AA28A1A009F4013 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		C468A43F2AA36CB8009F4013 /* ExtensionHandTrackingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHandTrackingVC.swift; sourceTree = "<group>"; };
+		C468A4412AA38758009F4013 /* BodyTrackingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTrackingVC.swift; sourceTree = "<group>"; };
 		C4F42A6D2AA23D770089D99A /* HandAndBodyTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandAndBodyTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F42A702AA23D770089D99A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F42A722AA23D770089D99A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +41,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C468A4382AA24548009F4013 /* PreviewUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C468A4342AA24539009F4013 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				C468A4352AA24539009F4013 /* PreviewUIKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		C468A4362AA24548009F4013 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C468A4392AA28972009F4013 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4F42A742AA23D770089D99A /* ViewController.swift */,
+				C468A43B2AA289A1009F4013 /* HandTrackingVC.swift */,
+				C468A43F2AA36CB8009F4013 /* ExtensionHandTrackingVC.swift */,
+				C468A4412AA38758009F4013 /* BodyTrackingVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C468A43A2AA2898E009F4013 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C468A43D2AA28A1A009F4013 /* CameraView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C4F42A642AA23D770089D99A = {
 			isa = PBXGroup;
 			children = (
+				C468A4342AA24539009F4013 /* Packages */,
 				C4F42A6F2AA23D770089D99A /* HandAndBodyTracking */,
 				C4F42A6E2AA23D770089D99A /* Products */,
+				C468A4362AA24548009F4013 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +103,10 @@
 		C4F42A6F2AA23D770089D99A /* HandAndBodyTracking */ = {
 			isa = PBXGroup;
 			children = (
+				C468A43A2AA2898E009F4013 /* View */,
+				C468A4392AA28972009F4013 /* ViewControllers */,
 				C4F42A702AA23D770089D99A /* AppDelegate.swift */,
 				C4F42A722AA23D770089D99A /* SceneDelegate.swift */,
-				C4F42A742AA23D770089D99A /* ViewController.swift */,
 				C4F42A762AA23D770089D99A /* Main.storyboard */,
 				C4F42A792AA23D790089D99A /* Assets.xcassets */,
 				C4F42A7B2AA23D790089D99A /* LaunchScreen.storyboard */,
@@ -83,6 +131,9 @@
 			dependencies = (
 			);
 			name = HandAndBodyTracking;
+			packageProductDependencies = (
+				C468A4372AA24548009F4013 /* PreviewUIKit */,
+			);
 			productName = HandAndBodyTracking;
 			productReference = C4F42A6D2AA23D770089D99A /* HandAndBodyTracking.app */;
 			productType = "com.apple.product-type.application";
@@ -138,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C468A4402AA36CB8009F4013 /* ExtensionHandTrackingVC.swift in Sources */,
 				C4F42A752AA23D770089D99A /* ViewController.swift in Sources */,
 				C4F42A712AA23D770089D99A /* AppDelegate.swift in Sources */,
+				C468A4422AA38758009F4013 /* BodyTrackingVC.swift in Sources */,
+				C468A43C2AA289A1009F4013 /* HandTrackingVC.swift in Sources */,
+				C468A43E2AA28A1A009F4013 /* CameraView.swift in Sources */,
 				C4F42A732AA23D770089D99A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +345,7 @@
 				DEVELOPMENT_TEAM = G7DSPSWXXC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HandAndBodyTracking/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +374,7 @@
 				DEVELOPMENT_TEAM = G7DSPSWXXC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HandAndBodyTracking/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -358,6 +415,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C468A4372AA24548009F4013 /* PreviewUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PreviewUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C4F42A652AA23D770089D99A /* Project object */;
 }
