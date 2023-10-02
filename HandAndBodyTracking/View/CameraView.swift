@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import SwiftUI
 
 class CameraView: UIView {
     
@@ -41,8 +42,6 @@ class CameraView: UIView {
     func setUp() {
         preivewLayer.addSublayer(customLayer)
     }
-    
-    
     
     func drawPath(points: [CGPoint], move: [Bool], color: UIColor) {
         
@@ -79,7 +78,5 @@ class CameraView: UIView {
         CATransaction.setDisableActions(false)
         CATransaction.commit()
     }
-    
-    
     
 }

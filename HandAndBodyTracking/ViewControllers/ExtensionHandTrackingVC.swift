@@ -22,7 +22,6 @@ extension HandTrackingVC: AVCaptureVideoDataOutputSampleBufferDelegate {
         }
         
         do {
-            self.loadingView.isHidden = false
             let handler = VNImageRequestHandler(cmSampleBuffer: sampleBuffer, orientation: .up, options: [:])
             points.removeAll()
             moves.removeAll()
@@ -78,11 +77,57 @@ extension HandTrackingVC: AVCaptureVideoDataOutputSampleBufferDelegate {
             points.append(convertPoints(inputPotin: center))
             moves.append(false)
             
-            print("end")
             
+            if let pointThump = thump[.thumbTip], let pointIndex = index[.indexTip], let pointMedium = medium[.middleTip], let pointRing = ring[.ringTip], let pointLittle = little[.littleTip] {
+    
+                self.checkContactTwoFinger(pointNear: pointThump, pointAway: pointIndex, typeFinger: .thumIndex, noContact: { [weak self] in
+                    guard let self = self else { return }
+                    self.checkContactTwoFinger(pointNear: pointThump, pointAway: pointMedium ,typeFinger: .thumbMiddle,noContact: { [weak self] in
+                        guard let self = self else { return }
+                        self.checkContactTwoFinger(pointNear: pointThump, pointAway: pointRing, typeFinger: .thumbRing, noContact: { [weak self] in
+                            guard let self = self else { return }
+                                self.checkContactTwoFinger(pointNear: pointThump, pointAway: pointLittle, typeFinger: .thumbLittle, noContact: nil)
+                        })
+                    })
+                })
+            }
+            
+            print("end")
+        
             
         } catch {
             print("Error \(error.localizedDescription)")
+        }
+    }
+    
+    private func checkContactTwoFinger(pointNear: VNRecognizedPoint, pointAway: VNRecognizedPoint, typeFinger: FingerCombination, noContact: (() -> ())?) {
+        
+        guard pointNear.confidence > 0.3 && pointAway.confidence > 0.3  else { return }
+        
+        let cgPointNear = convertPoints(inputPotin: pointNear)
+        let cgPointAway = convertPoints(inputPotin: pointAway)
+        
+        print("cgPoint.x \(cgPointNear.x), cgPoint1.x \(cgPointAway.x)")
+        
+        let distance = hypot(cgPointNear.x - cgPointAway.x, cgPointNear.y - cgPointAway.y)
+        
+        if distance < 40 {
+            print("🤖 Contatto!!!!!! \(typeFinger.rowValue)")
+            contatto = true
+            Task{
+                self.contattoLabel.text = typeFinger.rowValue
+                self.contattoLabel.isHidden = false
+            }
+        } else {
+            if noContact == nil {
+                Task {
+                    if contattoLabel.isHidden == false{
+                        self.contattoLabel.isHidden = true
+                    }
+                }
+            } else {
+                noContact!()
+            }
         }
     }
     

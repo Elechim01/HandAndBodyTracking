@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1E6C5BEE-4887-41FD-AA60-234499D010F0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A7F7F11-F0E5-4D6C-AF6B-446539BD9922"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HandAndBodyTracking/ViewControllers/HandTrackingVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3A7F7F11-F0E5-4D6C-AF6B-446539BD9922 - b70bca7e394e4a6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HandAndBodyTracking.HandTrackingVC.viewDidLoad() -&gt; ()"
+                  moduleName = "HandAndBodyTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michelemanniello/Documents/Sviluppo/Swift/SpatialComputing/HandAndBodyTracking/HandAndBodyTracking/ViewControllers/HandTrackingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "190">
+               </Location>
+               <Location
+                  uuid = "3A7F7F11-F0E5-4D6C-AF6B-446539BD9922 - b70bca7e394e4a6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HandAndBodyTracking.HandTrackingVC.viewDidLoad() -&gt; ()"
+                  moduleName = "HandAndBodyTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michelemanniello/Documents/Sviluppo/Swift/SpatialComputing/HandAndBodyTracking/HandAndBodyTracking/ViewControllers/HandTrackingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E756E24A-BE2D-4FBB-93D4-EACAE86D79D3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HandAndBodyTracking/ViewControllers/HandTrackingVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "createAVSession()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E756E24A-BE2D-4FBB-93D4-EACAE86D79D3 - baa43ccc10406772"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HandAndBodyTracking.HandTrackingVC.createAVSession() throws -&gt; ()"
+                  moduleName = "HandAndBodyTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michelemanniello/Documents/Sviluppo/Swift/SpatialComputing/HandAndBodyTracking/HandAndBodyTracking/ViewControllers/HandTrackingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "1020">
+               </Location>
+               <Location
+                  uuid = "E756E24A-BE2D-4FBB-93D4-EACAE86D79D3 - baa43ccc10406751"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HandAndBodyTracking.HandTrackingVC.createAVSession() throws -&gt; ()"
+                  moduleName = "HandAndBodyTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michelemanniello/Documents/Sviluppo/Swift/SpatialComputing/HandAndBodyTracking/HandAndBodyTracking/ViewControllers/HandTrackingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "1020">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E2D97178-94BA-4990-AF6C-4A611B123A56"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HandAndBodyTracking/ViewControllers/HandTrackingVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "createAVSession()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E2D97178-94BA-4990-AF6C-4A611B123A56 - baa43ccc10406962"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HandAndBodyTracking.HandTrackingVC.createAVSession() throws -&gt; ()"
+                  moduleName = "HandAndBodyTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michelemanniello/Documents/Sviluppo/Swift/SpatialComputing/HandAndBodyTracking/HandAndBodyTracking/ViewControllers/HandTrackingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "E2D97178-94BA-4990-AF6C-4A611B123A56 - baa43ccc104069ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HandAndBodyTracking.HandTrackingVC.createAVSession() throws -&gt; ()"
+                  moduleName = "HandAndBodyTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michelemanniello/Documents/Sviluppo/Swift/SpatialComputing/HandAndBodyTracking/HandAndBodyTracking/ViewControllers/HandTrackingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C35066E-C71B-49E6-8112-EE96A9533A02"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HandAndBodyTracking/ViewControllers/HandTrackingVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "createAVSession()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5C35066E-C71B-49E6-8112-EE96A9533A02 - baa43ccc10406903"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HandAndBodyTracking.HandTrackingVC.createAVSession() throws -&gt; ()"
+                  moduleName = "HandAndBodyTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michelemanniello/Documents/Sviluppo/Swift/SpatialComputing/HandAndBodyTracking/HandAndBodyTracking/ViewControllers/HandTrackingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "1288">
+               </Location>
+               <Location
+                  uuid = "5C35066E-C71B-49E6-8112-EE96A9533A02 - baa43ccc10406941"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HandAndBodyTracking.HandTrackingVC.createAVSession() throws -&gt; ()"
+                  moduleName = "HandAndBodyTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michelemanniello/Documents/Sviluppo/Swift/SpatialComputing/HandAndBodyTracking/HandAndBodyTracking/ViewControllers/HandTrackingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "268">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

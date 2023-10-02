@@ -12,6 +12,7 @@
 		C468A43E2AA28A1A009F4013 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C468A43D2AA28A1A009F4013 /* CameraView.swift */; };
 		C468A4402AA36CB8009F4013 /* ExtensionHandTrackingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C468A43F2AA36CB8009F4013 /* ExtensionHandTrackingVC.swift */; };
 		C468A4422AA38758009F4013 /* BodyTrackingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C468A4412AA38758009F4013 /* BodyTrackingVC.swift */; };
+		C4D862842AC47A7E00EF74BD /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D862832AC47A7E00EF74BD /* Enums.swift */; };
 		C4F42A712AA23D770089D99A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F42A702AA23D770089D99A /* AppDelegate.swift */; };
 		C4F42A732AA23D770089D99A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F42A722AA23D770089D99A /* SceneDelegate.swift */; };
 		C4F42A752AA23D770089D99A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F42A742AA23D770089D99A /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 		C468A43D2AA28A1A009F4013 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		C468A43F2AA36CB8009F4013 /* ExtensionHandTrackingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHandTrackingVC.swift; sourceTree = "<group>"; };
 		C468A4412AA38758009F4013 /* BodyTrackingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTrackingVC.swift; sourceTree = "<group>"; };
+		C4D862832AC47A7E00EF74BD /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		C4F42A6D2AA23D770089D99A /* HandAndBodyTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandAndBodyTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F42A702AA23D770089D99A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F42A722AA23D770089D99A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C4D862822AC47A5C00EF74BD /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				C4D862832AC47A7E00EF74BD /* Enums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		C4F42A642AA23D770089D99A = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		C4F42A6F2AA23D770089D99A /* HandAndBodyTracking */ = {
 			isa = PBXGroup;
 			children = (
+				C4D862822AC47A5C00EF74BD /* Enums */,
 				C468A43A2AA2898E009F4013 /* View */,
 				C468A4392AA28972009F4013 /* ViewControllers */,
 				C4F42A702AA23D770089D99A /* AppDelegate.swift */,
@@ -195,6 +206,7 @@
 				C468A4422AA38758009F4013 /* BodyTrackingVC.swift in Sources */,
 				C468A43C2AA289A1009F4013 /* HandTrackingVC.swift in Sources */,
 				C468A43E2AA28A1A009F4013 /* CameraView.swift in Sources */,
+				C4D862842AC47A7E00EF74BD /* Enums.swift in Sources */,
 				C4F42A732AA23D770089D99A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

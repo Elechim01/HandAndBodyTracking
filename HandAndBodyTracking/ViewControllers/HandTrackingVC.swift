@@ -19,6 +19,7 @@ class HandTrackingVC: UIViewController {
     
     var points: [CGPoint] = []
     var moves: [Bool] = []
+    var contatto: Bool = false
     
      lazy var cameraView: CameraView = {
       let camera = CameraView()
@@ -46,11 +47,23 @@ class HandTrackingVC: UIViewController {
         return label
     }()
     
+    lazy var contattoLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "PolliceIndice"
+        label.layer.masksToBounds = true
+        label.layer.cornerRadius = 10
+        label.backgroundColor = .red
+        label.textAlignment = .center
+       
+        return label
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addSubViews()
         setUptConstraint()
+        contattoLabel.isHidden = true
         
         self.navigationItem.setHidesBackButton(true, animated: true)
         
@@ -63,6 +76,7 @@ class HandTrackingVC: UIViewController {
         self.view.addSubview(cameraView)
         self.view.addSubview(descriptionLabel)
         self.view.addSubview(loadingView)
+        self.descriptionLabel.addSubview(contattoLabel)
     }
     
     func setUptConstraint() {
@@ -74,10 +88,12 @@ class HandTrackingVC: UIViewController {
             descriptionLabel.topAnchor.constraint(equalTo: view.topAnchor,constant: 60),
             descriptionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
-            
             loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-            
+            loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            contattoLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            contattoLabel.topAnchor.constraint(equalTo: loadingView.bottomAnchor, constant: 20),
+            contattoLabel.heightAnchor.constraint(equalToConstant: 30),
+            contattoLabel.widthAnchor.constraint(equalToConstant: 150)
         ])
     }
     
@@ -92,7 +108,7 @@ class HandTrackingVC: UIViewController {
                     cameraView.preivewLayer.videoGravity = .resizeAspectFill
                     cameraView.preivewLayer.session = cameraSession
                 }
-                cameraSession?.startRunning()
+                self.cameraSession?.startRunning()
                 
             } catch {
                 print(error.localizedDescription)
@@ -137,10 +153,7 @@ class HandTrackingVC: UIViewController {
         @unknown default:
             print("Error")
         }
-        
     }
-    
-    
     
     @objc
     func onTapOnView() {
